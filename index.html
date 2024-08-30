@@ -14,13 +14,13 @@
   <meta name="color-scheme" content="dark light" />
   <link rel="icon" href="./svg/favicon/safari-pinned-tab.svg" type="image/svg+xml" />
   <link rel="icon" href="./svg/favicon/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="./svg/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="./svg/favicon/apple-touch-icon.png">
 </head>
 
 <body class="page body">
   <header class="header">
-    <a class="a">&lt;/HTML&gt;</a>
-    <h1 class="h1">Закрывающий тег</h1>
+    <a class="header__link">&lt;/HTML&gt;</a>
+    <h1 class="header__title">Закрывающий тег</h1>
     <nav class="theme-menu header__theme-menu">
       <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
       <ul class="theme-menu__list">
@@ -52,10 +52,10 @@
           </h2>
 
         <div class="card__item_watermark-and-image">
-          <span class="card__item_watermark img1__watermark">&lt;/HTML&gt;</span
+          <span class="card__item_watermark">&lt;/HTML&gt;</span
             >
             <img
-              class="card__item_image img1"
+              class="card__item_image filter-purple"
               src="./images/image-2.jpg"
               alt="Фургон в фиолетовых оттенках"
             />
@@ -71,7 +71,7 @@
             </p>
           </div>
           <div class="buttons_wrapper">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -116,7 +116,7 @@
 
         <div class="card__item_watermark-and-image">
           <span class="card__item_watermark">&lt;/HTML&gt;</span>
-          <img class="card__item_image img2" src="./images/image-2.jpg" alt="Фургон в темных оттенках" />
+          <img class="card__item_image filter-dark" src="./images/image-2.jpg" alt="Фургон в темных оттенках" />
         </div>
         <div class="border_img">
           <p class="card__item_text">
@@ -125,7 +125,7 @@
           <p class="card__item_text">Начинаем работу.</p>
         </div>
         <div class="buttons_wrapper">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg xmlns="http://www.w3.org/2000/svg" class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black" />
@@ -147,7 +147,7 @@
 
         <div class="card__item_watermark-and-image">
           <span class="card__item_watermark">&lt;CSS&gt;</span>
-          <img class="card__item_image img3" src="./images/image-2.jpg" alt="Неоновый фургон" />
+          <img class="card__item_image filter-neon" src="./images/image-2.jpg" alt="Неоновый фургон" />
         </div>
         <div class="border_img">
           <p class="card__item_text">
@@ -156,7 +156,7 @@
           <p class="card__item_text">В очередной раз осознаешь сколько всего нужно выучить(после нескольких откланенных иттераций). Но пока все еще на позитиве.</p>
         </div>
         <div class="buttons_wrapper">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg xmlns="http://www.w3.org/2000/svg" class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black" />
@@ -178,7 +178,7 @@
 
         <div class="card__item_watermark-and-image">
           <span class="card__item_watermark">&lt;desigions&gt;</span>
-          <img class="card__item_image img4" src="./images/image-2.jpg" alt="Фургон в оттенках бургунди" />
+          <img class="card__item_image filter-burgundy" src="./images/image-2.jpg" alt="Фургон в оттенках бургунди" />
         </div>
         <div class="border_img">
           <p class="card__item_text">
@@ -187,7 +187,7 @@
           <p class="card__item_text">Теперь я умею вставлять видео на страничку сайта. Обалдеть!</p>
         </div>
         <div class="buttons_wrapper">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg xmlns="http://www.w3.org/2000/svg" class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black" />
@@ -209,7 +209,7 @@
 
         <div class="card__item_watermark-and-image">
           <span class="card__item_watermark">&lt;care&gt;</span>
-          <img class="card__item_image img5" src="./images/image-2.jpg" alt="Неоновый зеленый фургон" />
+          <img class="card__item_image filter-green" src="./images/image-2.jpg" alt="Неоновый зеленый фургон" />
         </div>
         <div class="border_img">
           <p class="card__item_text">
@@ -218,7 +218,7 @@
           <p class="card__item_text">Ребята всегда готовые помочь и разобраться в том, что тебе непонятно.</p>
         </div>
         <div class="buttons_wrapper">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg xmlns="http://www.w3.org/2000/svg" class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black" />
@@ -240,7 +240,7 @@
 
         <div class="card__item_watermark-and-image">
           <span class="card__item_watermark">&lt;support&gt;</span>
-          <img class="card__item_image img6" src="./images/image-2.jpg" alt="Ночной фургон" />
+          <img class="card__item_image filter-night" src="./images/image-2.jpg" alt="Ночной фургон" />
         </div>
         <div class="border_img">
           <p class="card__item_text">
@@ -251,7 +251,7 @@
           </p>
         </div>
         <div class="buttons_wrapper">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg xmlns="http://www.w3.org/2000/svg" class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black" />
@@ -273,7 +273,7 @@
 
         <div class="card__item_watermark-and-image">
           <span class="card__item_watermark">&lt;lifes-style: none;&gt;</span>
-          <img class="card__item_image img7" src="./images/image-2.jpg" alt="Заблюренный фиолетовый фургон" />
+          <img class="card__item_image filter-blur" src="./images/image-2.jpg" alt="Заблюренный фиолетовый фургон" />
         </div>
         <div class="border_img">
           <p class="card__item_text">
@@ -282,7 +282,7 @@
           <p class="card__item_text">Концентрация - это одно из самых сложных, учитывая количество окружающих отвлекающих факторов. Приходилось чем-то жертвовать.</p>
         </div>
         <div class="buttons_wrapper">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg xmlns="http://www.w3.org/2000/svg" class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black" />
@@ -304,7 +304,7 @@
 
         <div class="card__item_watermark-and-image">
           <span class="card__item_watermark">&lt;experience&gt;</span>
-          <img class="card__item_image img8" src="/images/image-2.jpg" alt="Зеленый фургон на коричневом фоне" />
+          <img class="card__item_image filter-brown" src="/images/image-2.jpg" alt="Зеленый фургон на коричневом фоне" />
         </div>
         <div class="border_img">
           <p class="card__item_text">
@@ -315,7 +315,7 @@
           </p>
         </div>
         <div class="buttons_wrapper">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg xmlns="http://www.w3.org/2000/svg" class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black" />
@@ -326,16 +326,14 @@
             </svg>
           </button>
 
-          <button class="card__like-button" type="button">
+          <button type="button" class="card__like-button" >
             <span class="button__text">Like</span>
           </button>
         </div>
       </li>
     </ul>
-  </main>
-
-  <footer>
-    <button onclick="window['dialog-id'].showModal();" aria-controls="dialog-id" class="save__button">
+  
+    <button type="button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id" class="save__button">
       <svg class="floppy_image" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="1.61538" height="1.61538" fill="black" />
         <rect y="1.61523" width="1.61538" height="1.61538" fill="black" />
@@ -421,7 +419,8 @@
 
       <span class="button__text">Сохранить на память</span>
     </button>
-  </footer>
+  </main>
+
   <dialog id="dialog-id" class="modal-window">
     <div class="modal-window__inner">
       <div class="wrapper">
@@ -511,7 +510,7 @@
         <p class="modal-window__text">Вставьте дискету, чтобы продолжить</p>
       </div>
       <form method="dialog">
-        <button class="modal-window__button">
+        <button type="button" class="modal-window__button">
           <span class="button__text">ОК</span>
         </button>
       </form>

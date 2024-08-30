@@ -56,14 +56,14 @@
   border: 2px solid var(--accent-color);
 }
 
-.a {
+.header__link {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   margin-bottom: 20px;
   text-decoration: none;
   color: var(--accent-color);
 }
 
-.h1 {
+.header__title {
   text-transform: uppercase;
   font-size: clamp(18px, 2.5vw, 23px);
   margin-bottom: 22px;
@@ -290,52 +290,8 @@
   z-index: 10;
 }
 
-.card__icon-button:hover .main-body {
-  fill: var(--accent-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.card__icon-button:hover .core {
-  fill: var(--accent-color);
-  transition: fill 0.3s linear;
-}
-
-.card__icon-button:active .main-body {
-  fill: var(--color-body-heart);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.card__icon-button:active .core {
-  fill: var(--color-body-heart);
-  transition: fill 0.3s linear;
-}
-
-/* Значок лайка */
-.like-icon.is-liked .main-body {
-  fill: var(--color-body-heart);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--color-body-heart);
-  transition: fill 0.3s linear;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--color-body-heart);
-  transition: fill 0.3s linear 0.06s;
-}
-
-.is-liked .heart {
-  animation: like-skale 0.3s ease-in 0.1s alternate;
-}
-
-.is-liked .sparks {
-  animation: like-shine 0.3s ease-in 0.3s alternate;
-}
-
 .modal-window {
-  width: 357px;
+  max-width: 357px;
   background-color: var(--background-color);
 
   font-family: var(--accent-font, fantasy);
@@ -386,58 +342,55 @@
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 /* Карточки фургонов */
-.img2 {
+.filter-dark {
   filter: saturate(30%);
 }
 
-.img3 {
+.filter-neon {
   filter: saturate(500%) contrast(100%) brightness(100%);
 }
 
-.img4 {
+.filter-burgundy {
   filter: saturate(200%) grayscale(50%) hue-rotate(25deg) sepia(30%) contrast(100%) brightness(100%);
 }
 
-.img5 {
+.filter-green {
   filter: saturate(220%) invert(60%) contrast(200%) brightness(120%);
 }
 
-.img6 {
+.filter-night {
   filter: saturate(30%) sepia(60%) invert(20%) grayscale(50%) contrast(200%);
 }
 
-.img7 {
+.filter-blur {
   filter: saturate(80%) blur(5px);
 }
 
-.img8 {
+.filter-brown {
   filter: saturate(30%) invert(20%) contrast(200%) hue-rotate(100deg) grayscale(30%) brightness(80%);
 }
 
 @media (width <= 476px) {
-  body {
-    min-height: 100vh;
-  }
 
   .header {
     padding-top: 120px;
   }
 
-  .a {
+  .header__link {
     font-size: 49px;
   }
 
-  .h1 {
+  .header__title {
     font-size: 14px;
   }
 
-  h2 {
+  /*h2 {
     line-height: 1.2;
-  }
+  }*/
 
   .save__button {
     flex-direction: column;
