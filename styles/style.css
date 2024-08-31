@@ -16,7 +16,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  padding-top: 102px;
+  padding-top: 89px;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wgth" var(--main-card-font-weight);
   color: var(--accent-color);
@@ -40,7 +40,7 @@
 
 .header {
   width: min(698px, 99%);
-  padding: 136px 0 15px 0;
+  padding: 125px 0 15px 0;
   background-color: var(--background-color);
   margin: 0 auto 100px auto;
 
@@ -302,13 +302,13 @@
 .floppy_image {
   min-width: 39px;
   min-height: 21px;
-  stroke: var(--color-button-text); 
-  fill: var(--color-button-text); 
+  stroke: var(--color-button-text);
+  fill: var(--color-button-text);
   mix-blend-mode: difference;
   z-index: 10;
 }
 .floppy_image rect {
-  fill: var(--color-button-text); 
+  fill: var(--color-button-text);
 }
 
 .modal-window {
@@ -396,7 +396,6 @@ dialog::backdrop {
 }
 
 @media (width <= 476px) {
-
   .header {
     padding-top: 120px;
   }
@@ -408,10 +407,6 @@ dialog::backdrop {
   .header__title {
     font-size: 14px;
   }
-
-  /*h2 {
-    line-height: 1.2;
-  }*/
 
   .save__button {
     flex-direction: column;

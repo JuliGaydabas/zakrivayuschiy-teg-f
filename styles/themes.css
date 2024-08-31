@@ -5,104 +5,70 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-:root.theme-dark { 
+:root.theme-dark {
+  --accent-color: #00cc14;
 
-  --accent-color: #00cc14; 
+  --label-line-color: #000;
 
-  --label-line-color: #000; 
+  --background-image: repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #007f0c 0.01%, #004306);
 
-  --background-image: repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #007f0c 0.01%, #004306); 
+  --background-color: #000;
 
- 
+  --main-card-font-weight: 465;
 
-  --background-color: #000; 
+  --header-card-font-weight: 785;
 
-  --main-card-font-weight: 465; 
+  --color-button-text: #00cc14;
+}
 
-  --header-card-font-weight: 785; 
+:root.theme-light {
+  --accent-color: #000;
 
- 
+  --label-line-color: #fff;
 
-  --color-button-text: #00cc14; 
+  --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
-} 
+  --background-color: #fff;
 
- 
+  --main-card-font-weight: 400;
 
-:root.theme-light { 
+  --header-card-font-weight: 700;
 
-  --accent-color: #000; 
+  --color-button-text: #fff;
+}
 
-  --label-line-color: #fff; 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #00cc14;
 
-  --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a); 
+    --label-line-color: #000;
 
- 
+    --background-image: repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #007f0c 0.01%, #004306);
 
-  --background-color: #fff; 
+    --background-color: #000;
 
-  --main-card-font-weight: 400; 
+    --main-card-font-weight: 465;
 
-  --header-card-font-weight: 700; 
+    --header-card-font-weight: 785;
 
- 
+    --color-button-text: #00cc14;
+  }
+}
 
-  --color-button-text: #fff; 
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #000;
 
-} 
+    --label-line-color: #fff;
 
- 
+    --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
-@media (prefers-color-scheme: dark) { 
+    --background-color: #fff;
 
-  :root { 
+    --main-card-font-weight: 400;
 
-    --accent-color: #00cc14; 
+    --header-card-font-weight: 700;
 
-    --label-line-color: #000; 
-
-    --background-image: repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #007f0c 0.01%, #004306); 
-
- 
-
-    --background-color: #000; 
-
-    --main-card-font-weight: 465; 
-
-    --header-card-font-weight: 785; 
-
- 
-
-    --color-button-text: #00cc14; 
-
-  } 
-
-} 
-
- 
-
-@media (prefers-color-scheme: light) { 
-
-  :root { 
-
-    --accent-color: #000; 
-
-    --label-line-color: #fff; 
-
-    --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a); 
-
- 
-
-    --background-color: #fff; 
-
-    --main-card-font-weight: 400; 
-
-    --header-card-font-weight: 700; 
-
- 
-
-    --color-button-text: #fff; 
-
-  } 
-
-} 
+    --color-button-text: #fff;
+  }
+}
