@@ -13,7 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -67,6 +66,20 @@
   text-transform: uppercase;
   font-size: clamp(18px, 2.5vw, 23px);
   margin-bottom: 22px;
+}
+
+.theme-menu {
+  display: block;
+  margin-block-start: 25px;
+  padding-inline-start: 15px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  gap: 8px;
 }
 
 .theme-menu__button {
@@ -224,6 +237,11 @@
 
 .card__icon-button:focus-visible {
   border-color: var(--accent-color);
+  /* box-shadow: 2px 2px 0px 0px var(--accent-color); */
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
 .card__icon-button:focus {
@@ -234,7 +252,6 @@
 .card__like-button:focus,
 .save__button:focus {
   outline: none;
-  box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
 .modal-window__button:before,
@@ -285,9 +302,13 @@
   min-width: 39px;
   min-height: 21px;
   margin-right: 8px;
-  stroke: var(--color-button-text);
+  stroke: var(--color-button-text); 
+  fill: var(--color-button-text); 
   mix-blend-mode: difference;
   z-index: 10;
+}
+.floppy_image rect {
+  fill: var(--color-button-text); 
 }
 
 .modal-window {
