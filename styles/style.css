@@ -40,7 +40,7 @@
 
 .header {
   width: min(698px, 99%);
-  padding: 125px 0 15px 0;
+  padding: 136px 0 14px 0;
   background-color: var(--background-color);
   margin: 0 auto 100px auto;
 
@@ -144,7 +144,7 @@
 .card__item {
   width: min(698px, 99%);
   background-color: var(--background-color);
-  margin: 0 auto 50px auto;
+  margin: 0 auto 52px auto;
   border: 2px solid var(--accent-color);
 }
 
@@ -186,6 +186,7 @@
   padding: 3px 10px;
   font-size: 18px;
   font-weight: var(--header-card-font-weight);
+  font-variation-settings: "wght" var(--header-card-font-weight);
   border-bottom: 2px solid var(--accent-color);
 }
 
@@ -273,11 +274,14 @@
   width: 100%;
 }
 
+.save__button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--accent-color);
+}
+
 .button__text {
   color: var(--color-button-text);
   mix-blend-mode: difference;
   z-index: 10;
-  margin-right: 11px;
 }
 
 /* Кнопка с сохранением */
@@ -299,6 +303,13 @@
   transition: all 0.5s;
 }
 
+.save__text {
+  color: var(--color-button-text);
+  mix-blend-mode: difference;
+  z-index: 10;
+  margin-right: 11px;
+}
+
 .floppy_image {
   min-width: 39px;
   min-height: 21px;
@@ -312,6 +323,12 @@
 }
 
 .modal-window {
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   max-width: 357px;
   background-color: var(--background-color);
 
@@ -362,6 +379,10 @@
   margin-top: 30px;
 }
 
+.modal-window__button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--accent-color);
+}
+
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
@@ -408,11 +429,16 @@ dialog::backdrop {
     font-size: 14px;
   }
 
+  .card__item {
+    margin: 20px auto 47px auto;
+  }
+
   .save__button {
     flex-direction: column;
     width: 306px;
     height: 80px;
     padding: 15px 0;
+    margin-top: -20px;
     justify-content: space-between;
   }
 
